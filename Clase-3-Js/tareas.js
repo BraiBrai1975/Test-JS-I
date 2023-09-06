@@ -160,7 +160,7 @@ function esVerdadero(valor) {
 function tieneTresDigitos(numero) {
   //Leer un número entero y retornar true si tiene 3 dígitos. Caso contrario, retorna false.
   //Escribe tu código aquí:
-  return numero >= 100;
+  return numero >= 100 && numero < 1000;
 }
 
 // ---------- Puntos extra ----------
@@ -177,7 +177,7 @@ function esPrimo(numero) {
       return false;
     }
   }
-  return numero !== 1;
+  return numero !== 1 && numero !== 0;
 }
 
 function doWhile(numero) {
@@ -189,7 +189,7 @@ function doWhile(numero) {
   do {
     numero += 5;
     contador++;
-  } while (contador < 5);
+  } while (contador < 8);
   return numero;
 }
 
